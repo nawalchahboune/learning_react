@@ -8,7 +8,7 @@ import Like from "./Components/Like";
 import Form from "./Components/Form";
 export default function App() {
   const [expanded, setExpanded] = useState(true);
-   const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
   const [liked, setLiked] = useState(false);
   useEffect(() => {
     console.log(liked);
@@ -38,7 +38,7 @@ export default function App() {
         onClose={onClose}
       />
       <ButtonN content="click me" onClick={onClick} /> */}
-      <Like onClick={like} color={colorIt()} />
+      {/* <Like onClick={like} color={colorIt()} /> */}
       {/* <div className="display:flex">
         <ExpandedText
           text="If used for item selection, when opened, simple menus places the initial focus on the selected menu item. The currently selected menu item is set using the selected prop (from ListItem). To use a selected menu item without impacting the initial focus, set the variant prop to  If used for item selection, when opened, simple menus places the initial focus on the selected menu item. The currently selected menu item is set using the selected prop (from ListItem). To use a selected menu item without impacting the initial focus, set the variant prop to "
@@ -50,7 +50,8 @@ export default function App() {
           onClick={() => onExpand(!expanded)}
         />
       </div> */}
-{/* <Form/> */}
+
+      <Form />
     </React.Fragment>
   );
 }
